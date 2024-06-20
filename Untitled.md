@@ -1,0 +1,5 @@
+![[Relasi1.png]]
+![[Cabangafter1.png]]
+![[Cabang1.png]]
+![[Relasi2.png]]![[Relasiafter1.png]]![[HasilRelasi.png]]
+![[Relasiafter2.png]]![[mysql82.png]]

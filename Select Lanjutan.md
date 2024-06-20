@@ -641,7 +641,12 @@ DROP VIEW nama_table;
 DROP VIEW info_no_plat;
 ```
 ### Hasil
-![a](Asett/View3.png)
+```
+MariaDB [Rental_Daudd]> CREATE VIEW info_no_plat AS SELECT id_mobil, no_plat, pemilik, peminjam FROM mobil WHERE pemilik
+= "ibrahim";
+Query OK, 0 rows affected (0.136 sec)
+```
+
 ### Analisis
 - `DROP VIEW`: Ini adalah perintah yang digunakan untuk menghapus view dari database. Dalam hal ini, perintah ini digunakan untuk menghapus view "info_no_plat".
 - `info_no_plat`: Ini adalah nama view yang akan dihapus. Nama ini harus sesuai dengan nama view yang ingin Anda hapus.
@@ -817,3 +822,33 @@ select AVG(harga_rental) AS RATA_RATA from mobil;
 - `FROM mobil`: Ini adalah bagian dari perintah SQL yang menunjukkan bahwa data diambil dari tabel bernama `mobil`. Jadi, perintah ini mengambil nilai rata-rata dari kolom `harga_rental` dari tabel `mobil`.
 ### Kesimpulan
 Kesimpulan dari pernyataan SQL `SELECT AVG(harga_rental) AS RATA_RATA FROM mobil;` adalah bahwa Anda ingin menghitung nilai rata-rata (average) dari kolom "harga_rental" dalam tabel "mobil".
+
+# Hasil Tantangan
+## Data Tabel
+![](Asett/Relasi1.png)
+## Perubahan Struktur Tabel
+### Before
+![](Asett/Relasi2.png)
+### After
+![](Asett/Relasiafter2.png)
+## Perubahan Data Tabel
+### Before Pegawai
+![](Asett/Relasi1.png)
+### After Pegawai
+![](Asett/Relasiafter1.png)
+### Before Cabang
+![](Asett/Cabang1.png)
+### After Cabang
+![](Asett/Cabangafter1.png)
+## Hasil Relasi
+![](Asett/HasilRelasi.png)
+## Query Relasi dan Hasil
+### Kode Program
+```sql
+SELECT s.nama AS Nama_Siswa, n.nilai AS Nilai
+FROM nilai AS n
+INNER JOIN siswa AS s ON s.id = n.id_siswa
+WHERE n.nilai > 75;
+```
+### Hasil
+![](Asett/mysql82.png)

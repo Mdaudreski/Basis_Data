@@ -145,7 +145,7 @@ no_telp char(12) UNIQUE );
 ```
 
 **Hasil**:
-![s](Asett/Struktur.jpg)
+![s](Asett/gamedit1.png)
 
 **Analisis**:
 - `id_pelanggan`: Kolom bertipe data integer dengan panjang maksimum 4 digit. Dideklarasikan sebagai kunci utama (PRIMARY KEY) yang tidak boleh kosong (NOT NULL).
@@ -163,7 +163,7 @@ struktur tabel ini memungkinkan untuk menyimpan informasi dasar tentang pelangga
 `desc Pelanggan;`
 
 **Contoh**:
-![s](Asett/Struktur.jpg)
+![s](Asett/gamedit1.png)
 
 **Analisis**:
 `desc pelanggan;`:dapat melihat secara detail karakteristik dari setiap kolom dalam tabel tersebut, termasuk nama kolom, tipe data, panjang maksimum (jika berlaku), dan konstrain khusus seperti PRIMARY KEY, UNIQUE, atau NOT NULL yang diterapkan pada setiap kolom.
@@ -178,7 +178,7 @@ perintah tersebut memberikan gambaran tentang bagaimana tabel "Pelanggan" telah 
 `show tables;`
 
 **Hasil**:
-![s](Asett/Tables.jpg)
+![s](Asett/gamedit2.png)
 
 **Analisis**:
 `show tables;`:untuk menampilkan semua tabel yang ada dalam database yang sedang aktif.
@@ -217,7 +217,7 @@ insert into Pelanggan
 values (1,"muhammad","agis","08500000");
 ```
 ### Hasil
-![s](Asett/Data1.jpg)
+![s](Asett/gamedit2.png)
 ### Analisis
 
 - `insert into Pelanggan`: Ini adalah perintah untuk memasukkan baris data ke dalam tabel "Pelanggan".
@@ -291,7 +291,7 @@ From [nama_table];
 ### Contoh
 `select nama_depan from Pelanggan;`
 ### Hasil
-![a](Asett/Kolom2.jpg)
+![a](Asett/gamedit6.png)
 
 ### Analisis
 - `Select` merupakan query yang digunakan untuk menampilkan hasil `insert` 
@@ -310,7 +310,7 @@ Select [nama_kolom] from [nama_table] where kondisi;
 select id_pelanggan,nama_depan from Pelanggan where id_pelanggan=1;
 ```
 ### Hasil
-![a](Asett/Where.jpg)
+![a](Asett/gamedit7.png)
 
 ### Analisis
 - `Select` merupakan query yang digunakan untuk menampilkan hasil `insert` 
@@ -331,7 +331,7 @@ Update nama_table set nama_kolom where kondisi;
 Update Pelanggan set no_telp="085326000" where id_pelanggan="1";
 ```
 ## Hasil
-![a](Asett/Update.jpg)
+![a](Asett/gamedit8.png)
 
 ## Analisis 
 - `update` adalah query yang digunakan untuk memperbarui nilai dari kolom
@@ -353,7 +353,7 @@ Delete from nama_table where kondisi;
 delete from Pelanggan where id_pelanggan="5";
 ```
 ## Hasil
-![a](Asett/Delete10.jpg)## Analisis
+![a](Asett/gamedit9.png)## Analisis
 - `delete` query yang digunakan untuk menghapus baris kolom
 - `from` query yang digunakan untuk memberikan penanda bahwa table mana yang akan di hapus baris nya
 - `pelanggan` nama table yang akan di hapus baris nya
